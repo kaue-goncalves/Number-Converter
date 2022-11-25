@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta= name="author" content="Gabriel Deluchi">
+  <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="img/Code.png">
+  <title>Numbers Converter</title>
+
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Gabriel Deluchi">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="img/Code.png">
+    <title>Numbers Converter</title>
+   
+  <body>
+    <div class="row row-header">
+      <div class="container">
+        <nav>
+          <ul>
+            <div class="btn-container">
+              <li>
+                <button><a href="#" name="increase-font" id="increase-font" title="Aumentar Fonte"><h2><b>A+</b></h2></a></button>
+              </li>
+             <li>
+              <button><a href="#" name="decrease-font" id="decrease-font" title="Diminuir Fonte"><h2><b>A-</b></h2></a></button>
+             </li>
+          </div>
+            <li>
+              <button><a href="#" data-contraste="0" title="Sem Contraste"><b>Sem Contraste</b></a></button>
+            </li>
+            <li>
+              <button><a href="#" data-contraste="1" title="Contraste Branco"><b>Contraste Branco</b></a></button>
+            </li>
+            <li>
+             <button><a href="#" data-contraste="2" title="Contraste Preto"><b>Contraste Preto</b></a></button> 
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <center>
+    <div class="row row-banner">
+      <div class="container">
+        <h2><b>NUMBER CONVERTER</b></h2>    
+      </div>
+    </div> 
+    <div class="row row-content">
+      <article class="container" id="content">
+        <div class="btn-container">
+          <div class="box-form">
+            <form>
+              <!-- ...Select para escoher o tipo de base a ser convertida -->
+              <label for="tipos_bases"><b>Selecione uma Base:</b></label>
+              <select id="tipos_bases" onchange="habi_desabi(this.value)">
+                <option value="0" selected>--</option>
+                <option value="10"><b>Decimal</b></option>
+                <option value="2"><b>Binário</b></option>
+                <option value="8"><b>Octal</b></option>
+                <option value="16"><b>Hexadecimal</b></option>
+              </select>
+      
+              <!-- ...Entrada de valor decimal -->
+              <label for="ipt_decimal"><b>Decimal:</b></label>
+              <input type="text" id="ipt_decimal" onkeypress="return type_decimal(event);" disabled />
+      
+      
+              <!-- ...Entrada de valor binario -->
+              <label for="ipt_binario"><b>Binário:</b></label>
+              <input type="text" id="ipt_binario" onkeypress="return type_binario(event);" disabled>
+      
+      
+              <!-- ...Entrada de valor octal -->
+              <label for="ipt_octal"><b>Octal:</b></label>
+              <input type="text" id="ipt_octal" onkeypress="return type_octal(event);" disabled>
+      
+      
+              <!-- ...Entrada de valor hexadecimal -->
+              <label for="ipt_hexadecimal"><b>Hexadecimal:</b></label>
+              <input type="text" id="ipt_hexadecimal" onkeypress="return type_hexadecimal(event);" disabled>
+      
+              <div class="container-btn">
+                <!-- ...Botão para executar os calculo de acordo o tipo de base escolhida no select -->
+                <button type="button" onclick="chamar_calculo();"><b>Converter</b></button>
+      
+                <!-- ...Botão para limpar os dados inseridos no formulario -->
+                <button type="reset" value="Limpar" onclick="habi_desabi()"><b>Limpar</b></button>
+            
+              </div>
+            </form>
+          </div>
+        </div>
+</div>
+        </div>
+      </article>
+    </div>
+  </center> 
+    <footer id="footer">
+        <p><b>Instituto Federal de Educação, Ciência e Tecnológia Catarinense - Campus Videira</b></p>
+    </footer>
+  </body>
+</html>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
